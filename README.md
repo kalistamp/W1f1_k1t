@@ -2,6 +2,10 @@
 
 [ Other Repositories/Tools: ] 
 
+https://github.com/0x90/wifi-arsenal
+
+https://github.com/TheWickerMan/Auto-Airodump-NG/blob/master/Auto-Airodump-NG [Tst and Take]
+
 bettercap -	Go - Linux/Windows/macOS/Android -	bettercap is the Swiss army knife for network attacks and monitoring.
 
 WiFi Pumpkin - Python - Linux/Windows/macOS/Android -	Framework for Rogue Wi-Fi Access Point Attack.
