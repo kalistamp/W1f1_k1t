@@ -12,6 +12,8 @@ bettercap -	Go - Linux/Windows/macOS/Android -	bettercap is the Swiss army knife
 
 WiFi Pumpkin - Python - Linux/Windows/macOS/Android -	Framework for Rogue Wi-Fi Access Point Attack.
 
+Aircrack-ng - C - Linux/Windows/macOS - Aircrack-ng suite of tools for monitoring and packet injection.
+
 Airgeddon	- Shell -	Linux/Windows/macOS	- This is a multi-use bash script for Linux systems to audit wireless networks.
 
 Airbash - C -	Linux/Windows/macOS - A POSIX-compliant, fully automated WPA PSK handshake capture script aimed at penetration testing.
