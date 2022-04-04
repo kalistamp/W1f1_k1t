@@ -1,3 +1,8 @@
+
+# Sources:
+
+- https://miloserdov.org/?p=2100
+
 # W1f1 Ars3nal:
 
 [ T00ls: ]
@@ -12,7 +17,7 @@ Airgeddon	- Shell -	Linux/Windows/macOS	- This is a multi-use bash script for Li
 
 Airbash - C -	Linux/Windows/macOS - A POSIX-compliant, fully automated WPA PSK handshake capture script aimed at penetration testing.
 
-[ Other Repositories: ] 
+# Other Repositories: 
 
 - https://github.com/0x90/wifi-arsenal
 
