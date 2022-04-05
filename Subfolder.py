@@ -162,9 +162,7 @@ Passive Bruteforce attacks failed, Moving onto Engaging Target is the next optio
 
 As you've learned from watching the videos in the Wi-Fi megaprimer you're able to setup your own access point and name it whatever you'd like. If you're targeting "HOME-Wi-Fi" then you would set your rogue AP up to broadcast "HOME-Wi-Fi" as well. One network card will be used to bring up your rogue AP and the other network card will be used to launch a Denial of Service (DoS) attack against the real "HOME-Wi-Fi". The goal with the DoS attack is to overwhelm and take down the real "HOME-Wi-Fi" preventing people from connecting to it while at the same time bringing up your rogue AP tricking people into connecting to you instead. The victims will think they're connecting to their "HOME-Wi-Fi" network and not realize they are indeed connected directly to you
 
-They will click and search for their Wi-Fi network or at least troubleshoot a little bit. The goal with an EvilTwin attack is the only Wi-Fi network the people will be able to connect to will be your EvilTwin network which has the same name as theirs. The only difference is it will be open and unencrypted.
-
-The reality is if they want internet they will end up connecting to your rogue access point. Maybe they don't right away but most users are not that bright, impulsive, and impatient. 
+They will click and search for their Wi-Fi network or at least troubleshoot a little bit
 
 Tools we will be using:
 wifiphisher
