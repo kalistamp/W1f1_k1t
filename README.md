@@ -2,6 +2,7 @@
 # Sources:
 
 - https://miloserdov.org/?p=2100
+- https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
 
 # W1f1 Ars3nal:
 
@@ -22,5 +23,7 @@ Airbash - C -	Linux/Windows/macOS - A POSIX-compliant, fully automated WPA PSK h
 - https://github.com/0x90/wifi-arsenal
 
 - https://github.com/TheWickerMan/Auto-Airodump-NG/blob/master/Auto-Airodump-NG [Tst and Take]
+
+- https://github.com/wifiphisher/extra-phishing-pages
 
 - https://pwnagotchi.ai/
