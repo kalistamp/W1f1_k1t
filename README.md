@@ -4,6 +4,9 @@
 - https://miloserdov.org/?p=2100
 - https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
 
+- https://www.youtube.com/watch?v=QHo2hCzxMr0
+
+
 # W1f1 Ars3nal:
 
 [ T00ls: ]
