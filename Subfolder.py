@@ -101,55 +101,76 @@ Note: Use a good Wordlist !
 - w [words]: path to wordlist(s) filename(s)
 - Drag and drop the .cap file
 
-Other tools like hashcat can be used for cracking a Network, The outfile needs to be an HCCAPX file [Hashcat utils provide a binary to convert]
+Introduction
 
-Attacking WPA2 PSK w/ HASHCAT (The old way)
+Running "sudo airmon-ng check kill" should be used every time you launch Wi-Fi attacks to ensure there is no other applications that will interfere with our attacks. Good habit to do this every time you plan on hacking a Wi-Fi network.
 
-                                        aircrack-ng outfile -w wordlist
+WPA/WPA2 requires a minimum password of 8 chracters so we need to be using a wordlist that contains passwords >8 characters.
 
-# But also using other tools like hashcat
+When you're using the tools needed to hack Wi-Fi networks you'll notice the Power/PWR level is displayed in dBi or "db" sometimes with a "-" sign before the number displayed. It doesn't matter which tool you plan on using (airodump-ng, wifite, etc.) since they all display the "Power" level a little differently but all represent the "db/dBi. Notice the power levels 
 
-# The outfile needs to be an HCCAPX file
+Hardware and Setup:
 
-# Hashcat utils provide a binary to convert
+It's important to understand that a wireless antenna improves the tranmission and reception of the radiofrequency (RF) signals giving you a reliable connection to the Wi-Fi network. The gain provided by an antenna is measured in Decibels Isotropic (dBi) which is what's represented when you're looking for wireless networks to connect in order to determine which one has the best connection.
 
-./cap2hccapx.exe WPA2_test.cap-01.cap WPA2_test.hccapx
+Yagi" antennas are known for connecting to a Wi-Fi network from a distance and are widely used in the hacker community. These are best suited when targeting a Wi-Fi network from a great distance. 
 
-# Then you can crack it like a normal hash (see hashcat section)
+Imagine someone thinking something was peculiar about their internet connection at a public Wi-Fi and seeing someone with strange antennas, stickers on their laptop, wearing a top hat, and looking up to no good sitting there. It's just not good. Blend in. Keep your laptop clean looking, keep professional, and appear to be a normal plain user , NO STICKERS ALLOWED
 
-./hashcat64.exe -m 2500 WPA2_test.hccapx wordlist.txt –force -O
+If you encounter an issue with your USBs and Kali won't start without an error this is most likely because you don't have a USB 2.0 or 3.0 port. Make sure your Alfa card is plugged in and attached to your Kali VM with the proper USB settings selected for it. If you do not have a USB 3.0 or USB 2.0 port on your computer you won't be able to use the Alfa network cards recommended in this course and will not be able to continue.
 
-Attacking WPA2 using PMKID
+START:
 
-# You don’t need any network traffic
+Instead of me explaining every technical detail about WEP, WPS, and WPA/WPA2 WiFi networks I'll direct you to an excellent resource
 
-# Using hcxtools and hcxdumptool
+< https[.]//wwwyoutube.com/watch?v=QHo2hCzxMr0 >
 
-# Monitor mode
+Capture the three way handhsake from the Access Point you are looking to target and crack, Usually this is done by Deauthing a device on the network your monitoring or using "hcxdumptool" 
 
-sudo airmon-ng start wlan0mon
+USE THESE TOOLS - -
 
-# PMKID capture
+airmon-ng
+airodump-ng
+aireplay-ng
 
-# It can take a while to capture PKMID (several minutes++)
+Now at some point you're going to realize you're not able to crack every Wi-Fi network you come across and not every Wi-Fi network can be cracked or hacked. It depends on a lot of factors like signal strength, location, password complexity, etc. 
 
-# If an AP recieves our association request packet and supports sending 
+Running Hashcat :
 
-sudo hcxdumptool -i wlan0mon -o outfile.pcapng –enable_status=1
+To utilize hashcat we must first turn the .cap file into a workable format for hashcat. Go to the directory that wifite saved the .cap file of the network you're trying to crack and have had no success using default wordlists on.
 
-# Then convert the captured data to a suitable format for hashcat
+Using "wpaclean" you can covert your .cap file into the correct format required for hashcat 
 
-# -E retrieve possible passwords from WiFi-traffic (additional, this list will include ESSIDs)
+[ wpaclean NEW.cap handshake.cap ]
 
-# -I retrieve identities from WiFi-traffic
+# Confused about this next part... Where did this new hashcat file come from ??? Is it being created by the "-j" switch after aircrack-ng ???
 
-# -U retrieve usernames from WiFi-traffic
+# The next command from the tutorial tells me to enter this command:
 
-sudo hcxpcaptool -E essidlist -I identitylist -U usernamelist -z test.16800 test.pcapng
+[  aircrack-ng -j hashcat.hccapx New.cap ]
 
-# Then, you can use hashcat to crack it (see hashcat section)
+You now have a hccapx file which is meant only for hashcat. We'll now use the GPU on your host machine to increase password cracking significantly.
 
-./hashcat -m 16800 test.16800 -a 3 -w 3 ‘?l?l?l?l?l?lt!’
+[  hashcat -m 2500 hashcat.hccapx WORDLIST.txt ]
+
+(  -m 2550 specifies the hash file type which in this case relates to WPA/WPA2 )
+
+
+EvilTwin Cracking:
+
+Passive Bruteforce attacks failed, Moving onto Engaging Target is the next option 
+
+As you've learned from watching the videos in the Wi-Fi megaprimer you're able to setup your own access point and name it whatever you'd like. If you're targeting "HOME-Wi-Fi" then you would set your rogue AP up to broadcast "HOME-Wi-Fi" as well. One network card will be used to bring up your rogue AP and the other network card will be used to launch a Denial of Service (DoS) attack against the real "HOME-Wi-Fi". The goal with the DoS attack is to overwhelm and take down the real "HOME-Wi-Fi" preventing people from connecting to it while at the same time bringing up your rogue AP tricking people into connecting to you instead. The victims will think they're connecting to their "HOME-Wi-Fi" network and not realize they are indeed connected directly to you
+
+They will click and search for their Wi-Fi network or at least troubleshoot a little bit. The goal with an EvilTwin attack is the only Wi-Fi network the people will be able to connect to will be your EvilTwin network which has the same name as theirs. The only difference is it will be open and unencrypted.
+
+The reality is if they want internet they will end up connecting to your rogue access point. Maybe they don't right away but most users are not that bright, impulsive, and impatient. 
+
+Tools we will be using:
+wifiphisher
+airgeddon
+wifipumpkin3
+
 
 Sources:
 
