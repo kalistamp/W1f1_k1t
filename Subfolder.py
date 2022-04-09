@@ -28,9 +28,34 @@ os.mkdir(sub_four, mode=0o777)
 
 # [ "os.chmod" can change the permissions of anyy Directory or File created by "os", or any other arugment you use such as "open/write" ]
 
+file = open("Txt", "w") 
+file.write("Text Input")
+file.close()
 
 file = open("Txt", "w") 
 file.write("Text Input")
+file.close()
+
+file = open("T00lz", "w") 
+file.write("""
+
+Huge List of Resources 
+
+https://github.com/0x90/wifi-arsenal
+
+CUPP - Common User Passwords Profiler
+
+https://github.com/Mebus/cupp
+
+Rogue Access Point framework
+
+https://github.com/wifiphisher/wifiphisher
+
+Used to audit wireless networks with many features
+
+https://github.com/v1s1t0r1sh3r3/airgeddon
+
+    """)
 file.close()
 
 file = open("Man", "w") 
