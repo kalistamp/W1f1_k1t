@@ -173,8 +173,7 @@ Using "wpaclean" you can covert your .cap file into the correct format required 
 
 [ wpaclean NEW.cap handshake.cap ]
 
-How to split handshakes on different files:
-
+How to view/split handshakes on cap file using airerack-ng:
 
 It is important to understand the difference between a file in which several handshakes are simply merged and a capture file in a noisy environment. An example of analyzing a file of the first type (using aircrack-ng ):
 
@@ -202,21 +201,6 @@ Read 27874 packets.
   11  1C:9E:CC:68:BE:5F  PlayasBall                WPA (0 handshake)
   12  1E:9E:CC:62:AE:FB                            Unknown
 
-
-Index number of target network ? 
-yes
-
-Reading packets, please wait...
-Opening /home/sock/Documents/wifi/3_27_22/AP/main/main-01.cap
-Read 27874 packets.
-
-0 potential targets
-
-No matching network found - check your bssid.
-
-
-Quitting aircrack-ng...
-
 		{ EXAMPLE TWO - - }
 
 # Example is a local AP "hillhouse" , checked to see if WPA Handshake was properly achieved :
@@ -234,15 +218,24 @@ Read 3 packets.
 Choosing first network as target.
 
 Reading packets, please wait...
-Opening /home/sock/Desktop/4_18_22/w1f1_k1t/SharkCaps/hillhouse/newhouse.cap
+Opening newhouse.cap
 Read 3 packets.
 
-1 potential targets
-
-Please specify a dictionary (option -w).
-
-
 # END
+
+Viewing cap files in Wireshark:
+
+After opening the file, install the filter [eapol] by using bookmark menu -- Analyze -- Display Filters... - - add the filter eapol.
+
+You can then filter by BSSID in the above search bar :
+
+ wlan.addr==<BSSID HERE>
+
+Requirements to check if Handshake is suitable for cracking -
+
+[ If it necessarily includes the second element (M2), as well as the third (M3) (ensures that the connection to the network was made) or instead of the third element contains the first element (M1) (the handshake is suitable for breaking the password, but there are no guarantees that connection and that the correct password was entered). Better if you managed to capture all four elements ]
+
+[ elements of a handshake must be in the correct order - there should not be too much timE between them (measured in milliseconds and microseconds). ]
 
 
 EvilTwin Cracking:
