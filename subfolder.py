@@ -39,6 +39,8 @@ file.close()
 file = open("T00lz", "w") 
 file.write("""
 
+( Common Wireless Methods: Packet Sniffing | Jamming | Brute-Cracking | Evil Twin | Rogue Acces Point | W.r Chalking )
+
 Huge List of Resources 
 
 https://github.com/0x90/wifi-arsenal
