@@ -22,6 +22,7 @@ ___] |__| |__] |    |__| |___ |__/ |___ |  \ .|      |
 
 sub_banner()
 
+x = ' '
 spam = 'by:kalistamp '
 print(spam.title())
 print(x*2)
