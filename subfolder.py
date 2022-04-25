@@ -3,40 +3,54 @@
 # Disclaimer: This script is for educational purposes only.  
 # Do not use against any network that you don't own or have authorization to test. 
 
-
 # CREATES INDIVIDUAL CATEGORIZED FOLDERS FOR ANY RECONNAISSANCE
-
 # Note: If ran in sudo Permissions will default to "Locked" 
-
 
 import os
 
-main = 'AP'
-sub_one = 'SharkCaps'
-sub_two = 'WordLi'
-sub_tree = 'Hashcat'
-sub_four = 'Xtras'
-# sub_five = 'Xtras_2'
+def sub_banner():
+    version = "1.0"
+    ascii_banner = f"""                                                                                                                                                       
 
-os.mkdir(main, mode=0o777)
-# "0o777" is Defauly Mode to unlock all permissions ...
+____ _  _ ___  ____ ____ _    ___  ____ ____  ___  _   _ 
+[__  |  | |__] |___ |  | |    |  \ |___ |__/  |__]  \_/  
+___] |__| |__] |    |__| |___ |__/ |___ |  \ .|      |   
+                                                         
+
+    """
+    print(ascii_banner)
+
+sub_banner()
+
+spam = 'by:kalistamp '
+print(spam.title())
+print(x*2)
+
+main = input(f'Enter_Date_of_Todays_Work:  ')
+sub_one = f'{main}/SharkCaps/'
+sub_two = f'{main}/WordLi/'
+sub_tree = f'{main}/Hashcat/'
+sub_four = f'{main}/AP/'
+sub_five = f'{main}/Xtras/'
+
+os.mkdir(main, mode=0o777)      # "0o777" is Defauly Mode to unlock all permissions ...
 os.mkdir(sub_one, mode=0o777)
 os.mkdir(sub_two, mode=0o777)
 os.mkdir(sub_tree, mode=0o777)
 os.mkdir(sub_four, mode=0o777)
-# os.mkdir(sub_five, mode=0o777)
+os.mkdir(sub_five, mode=0o777)
 
 # [ "os.chmod" can change the permissions of anyy Directory or File created by "os", or any other arugment you use such as "open/write" ]
 
-file = open("Txt", "w") 
+file = open(f"{main}/Txt", "w") 
 file.write("Text Input")
 file.close()
 
-file = open("Txt", "w") 
-file.write("Text Input")
+file = open(f"{main}/Txt", "w") 
+file.write("Text Input - [ PMKID = Only part of the Handshake was aquired ]")
 file.close()
 
-file = open("T00lz", "w") 
+file = open(f"{main}/T00lz", "w") 
 file.write("""
 
 ( Common Wireless Methods: Packet Sniffing | Jamming | Brute-Cracking | Evil Twin | Rogue Acces Point | W.r Chalking )
@@ -60,7 +74,7 @@ https://github.com/v1s1t0r1sh3r3/airgeddon
     """)
 file.close()
 
-file = open("Man", "w") 
+file = open(f"{main}/Man", "w") 
 file.write("""
 
 Tools:
@@ -269,8 +283,12 @@ https://shehackske.medium.com/capturing-and-cracking-wpa-handshake-using-aircrac
 https://cryptokait.com/2020/09/02/taking-password-cracking-to-the-next-level/
 Update:
 
+***********************************************************************************
 After running, airmon-ng check kill to activate adapter to find AP’s
 
 run, service NetworkManager restart – To turn back on Network wifi
+***********************************************************************************
     """) 
 file.close()
+
+print('Subfolder Kit Created.')
