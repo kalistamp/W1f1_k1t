@@ -23,11 +23,12 @@ ___] |__| |__] |    |__| |___ |__/ |___ |  \ .|      |
 sub_banner()
 
 x = ' '
-spam = 'by:kalistamp '
+spam = 'by:калистамп '
 print(spam.title())
 print(x*2)
 
 main = input(f'Enter_Date_of_Todays_Work:  ')
+print(x*2)
 sub_one = f'{main}/SharkCaps/'
 sub_two = f'{main}/WordLi/'
 sub_tree = f'{main}/Hashcat/'
