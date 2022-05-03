@@ -64,6 +64,10 @@ CUPP - Common User Passwords Profiler
 
 https://github.com/Mebus/cupp
 
+Network Forensic Analysis Tool (NFAT) that processing and inspection of network traffic (mainly PCAP files, but it also capable of directly live capturing from a network interface)
+
+https://github.com/odedshimon/BruteShark
+
 Rogue Access Point framework
 
 https://github.com/wifiphisher/wifiphisher
@@ -292,4 +296,4 @@ run, service NetworkManager restart – To turn back on Network wifi
     """) 
 file.close()
 
-print('Subfolder Kit Created.')
+print(' [+] Subfolder Kit Created.')
