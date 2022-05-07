@@ -27,9 +27,10 @@ spam = 'by:калистамп '
 print(spam.title())
 print(x*2)
 
-main = input(f'Enter_Date_of_Todays_Work:  ')
+main = input(f'Enter_Date_of_Todays_Wrk:  ')
 print(x*2)
 sub_one = f'{main}/SharkCaps/'
+sub_one_a = f'{main}/SharkCaps/Main'
 sub_two = f'{main}/WordLi/'
 sub_tree = f'{main}/Hashcat/'
 sub_four = f'{main}/AP/'
@@ -37,6 +38,7 @@ sub_five = f'{main}/Xtras/'
 
 os.mkdir(main, mode=0o777)      # "0o777" is Defauly Mode to unlock all permissions ...
 os.mkdir(sub_one, mode=0o777)
+os.mkdir(sub_one_a, mode=0o777)
 os.mkdir(sub_two, mode=0o777)
 os.mkdir(sub_tree, mode=0o777)
 os.mkdir(sub_four, mode=0o777)
@@ -45,6 +47,10 @@ os.mkdir(sub_five, mode=0o777)
 # [ "os.chmod" can change the permissions of anyy Directory or File created by "os", or any other arugment you use such as "open/write" ]
 
 file = open(f"{main}/Txt", "w") 
+file.write("Text Input")
+file.close()
+
+file = open(f"{sub_one_a}/Txt", "w") 
 file.write("Text Input")
 file.close()
 
