@@ -87,6 +87,10 @@ CUPP - Common User Passwords Profiler
 
 https://github.com/Mebus/cupp
 
+Remove duplicates from MASSIVE wordlist, without sorting it (for dictionary-based password cracking)
+
+https://github.com/nil0x42/duplicut
+
 Network Forensic Analysis Tool (NFAT) that processing and inspection of network traffic (mainly PCAP files, but it also capable of directly live capturing from a network interface)
 
 https://github.com/odedshimon/BruteShark
