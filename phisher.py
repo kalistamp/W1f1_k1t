@@ -1,18 +1,24 @@
 
-# NOT COMPLETE - CHECK BEFORE FINISH DRAFT 
+
+FINISH REDAING THIS :
+
+file:///Users/rec/Downloads/WifiPhisher,%20Hacking%20Tools%20(2022)%20(5_12_2022%208_50_51%20AM).html
+
+
+
 
 # MORE RECOURCES TO READ - - 
-
-# https://null-byte.wonderhowto.com/how-to/hack-wi-fi-get-anyones-wi-fi-password-without-cracking-using-wifiphisher-0165154/
 
 #  ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
 
 
-#WHERE DO I ADD THIS ?
-#Evil Twin attack can be performed by running Wifiphisher w/ the following command parameters.
-#wifiphisher -aI wlan0 -jI wlan1 -p firmware-upgrade --handshake-capture handshake.pcap
+ WHERE DO I ADD THIS ?
 
-author = калистамп 
+ Evil Twin attack can be performed by running Wifiphisher w/ the following command parameters.
+
+wifiphisher -aI wlan0 -jI wlan1 -p firmware-upgrade --handshake-capture handshake.pcap
+
+author = Автор: калистамп 
 x = ' '
 title = Wifi Phishing Tutorial
 tools = ['https://github.com/gophish/gophish', 'https://github.com/s0lst1c3/eaphammer', 'https://www.bettercap.org/' 'https://github.com/Ettercap/ettercap', 'https://github.com/onevcat/Kingfisher']
@@ -45,7 +51,7 @@ print(x*2)
 def view_tut():
 	print ('''
 
-	WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP
+	WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
 
 	Overview :
 
@@ -60,7 +66,18 @@ def view_tut():
 
 	*****************************************************
 
-	First step, is to RUN the script - [python3 wifiphisher.py]
+	Wifiphisher can be run with or without any parameters or options. To run the tool without setting any parameters, simply type wifiphisher or python bin/wifiphisher in the terminal.
+	The tool searches for the corresponding Wi-Fi interface and opens in GUI mode.
+	Once the GUI is open, the tool searches for available Wi-Fi networks (ESSID) in the vicinity. The target ESSID can be selected using the up / down arrow keys.
+
+	*****************************************************
+
+	First step, is to RUN the script -
+
+	python3 wifiphisher.py
+
+	sudo python setup.py install
+
 	On the first time running it will likely tell you that "hostapd" is not found and will prompt you to install it. Install by typing "y" for yes. It will then proceed to install hostapd (Run again after install)
 
 	Next, the script will start the web server on port 8080 and 443, then go about and discover the available Wi-Fi networks
@@ -119,7 +136,12 @@ def print_tut():
 
 	*****************************************************
 
-	First step, is to RUN the script - [python3 wifiphisher.py]
+	First step, is to RUN the script -
+
+	python3 wifiphisher.py
+
+	sudo python setup.py install
+
 	On the first time running it will likely tell you that "hostapd" is not found and will prompt you to install it. Install by typing "y" for yes. It will then proceed to install hostapd (Run again after install)
 
 	Next, the script will start the web server on port 8080 and 443, then go about and discover the available Wi-Fi networks
