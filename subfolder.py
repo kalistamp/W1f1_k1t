@@ -23,7 +23,7 @@ ___] |__| |__] |    |__| |___ |__/ |___ |  \ .|      |
 sub_banner()
 
 x = ' '
-spam = 'by:калистамп '
+spam = 'Автор: калистамп '
 print(spam.title())
 print(x*2)
 
@@ -46,12 +46,8 @@ os.mkdir(sub_five, mode=0o777)
 
 # [ "os.chmod" can change the permissions of anyy Directory or File created by "os", or any other arugment you use such as "open/write" ]
 
-file = open(f"{main}/Txt", "w") 
-file.write("Text Input")
-file.close()
-
-file = open(f"{sub_one_a}/Txt", "w") 
-file.write("""
+text_input = 'Text Input - [ PMKID = Only part of the Handshake was aquired ]'
+main_commands = """
 
 sudo airmon-ng 
 
@@ -67,15 +63,8 @@ aireplay-ng -1 0 -e teddy -a 00:14:7K:6E:40:80 -h 00:0F:9K:68:9K:82 wlan0mon
 
 
 
-""")
-file.close()
-
-file = open(f"{main}/Txt", "w") 
-file.write("Text Input - [ PMKID = Only part of the Handshake was aquired ]")
-file.close()
-
-file = open(f"{main}/T00lz", "w") 
-file.write("""
+"""
+tools = """
 
 ( Common Wireless Methods: Packet Sniffing | Jamming | Brute-Cracking | Evil Twin | Rogue Acces Point | W.r Chalking )
 
@@ -103,11 +92,8 @@ Used to audit wireless networks with many features
 
 https://github.com/v1s1t0r1sh3r3/airgeddon
 
-    """)
-file.close()
-
-file = open(f"{main}/Man", "w") 
-file.write("""
+    """
+MEAT = """
 
 Tools:
 
@@ -320,7 +306,22 @@ After running, airmon-ng check kill to activate adapter to find AP’s
 
 run, service NetworkManager restart – To turn back on Network wifi
 ***********************************************************************************
-    """) 
+    """
+
+file = open(f"{main}/Txt", "w") 
+file.write(f'{text_input}')
+file.close()
+
+file = open(f"{sub_one_a}/Txt", "w")
+file.write(f'{main_commands}')
+file.close()
+
+file = open(f"{main}/T00lz", "w") 
+file.write(f'{tools}')
+file.close()
+
+file = open(f"{main}/Man", "w") 
+file.write(f'{MEAT}') 
 file.close()
 
 print(' [+] Subfolder Kit Created.')
