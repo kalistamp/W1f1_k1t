@@ -29,9 +29,9 @@ print(x*2)
 
 main = input(f'Enter_Date_of_Todays_Wrk:  ')
 print(x*2)
-sub_one = f'{main}/SharkCaps/'
-sub_one_a = f'{main}/SharkCaps/Main'
-sub_two = f'{main}/WordLi/'
+sub_one = f'{main}/Sharkcaps/'
+sub_one_a = f'{main}/Sharkcaps/Main'
+sub_two = f'{main}/Word_li/'
 sub_tree = f'{main}/Hashcat/'
 sub_four = f'{main}/AP/'
 sub_five = f'{main}/Xtras/'
@@ -308,19 +308,19 @@ run, service NetworkManager restart – To turn back on Network wifi
 ***********************************************************************************
     """
 
-file = open(f"{main}/Txt", "w") 
+file = open(f"{main}/txt", "w") 
 file.write(f'{text_input}')
 file.close()
 
-file = open(f"{sub_one_a}/Txt", "w")
+file = open(f"{sub_one_a}/txt", "w")
 file.write(f'{main_commands}')
 file.close()
 
-file = open(f"{main}/T00lz", "w") 
+file = open(f"{main}/toolz", "w") 
 file.write(f'{tools}')
 file.close()
 
-file = open(f"{main}/Man", "w") 
+file = open(f"{main}/man", "w") 
 file.write(f'{MEAT}') 
 file.close()
 
