@@ -29,12 +29,12 @@ print(x*2)
 
 main = input(f'Enter_Date_of_Todays_Wrk:  ')
 print(x*2)
-sub_one = f'{main}/Sharkcaps/'
-sub_one_a = f'{main}/Sharkcaps/Main'
-sub_two = f'{main}/Word_li/'
-sub_tree = f'{main}/Hashcat/'
+sub_one = f'{main}/sharkcaps/'
+sub_one_a = f'{main}/sharkcaps/main'
+sub_two = f'{main}/word_li/'
+sub_tree = f'{main}/hashcat/'
 sub_four = f'{main}/AP/'
-sub_five = f'{main}/Xtras/'
+sub_five = f'{main}/xtras/'
 
 os.mkdir(main, mode=0o777)      # "0o777" is Defauly Mode to unlock all permissions ...
 os.mkdir(sub_one, mode=0o777)
