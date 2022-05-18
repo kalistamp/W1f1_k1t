@@ -49,6 +49,8 @@ os.mkdir(sub_five, mode=0o777)
 text_input = 'Text Input - [ PMKID = Only part of the Handshake was aquired ]'
 main_commands = """
 
+iwconfig
+
 sudo airmon-ng 
 
 sudo airmon-ng start wlan0
@@ -61,6 +63,7 @@ aireplay-ng -0 15 -a 1C:9E:CC:00:00 -c 3C:2E:FF:00:00
 
 aireplay-ng -1 0 -e teddy -a 00:14:7K:6E:40:80 -h 00:0F:9K:68:9K:82 wlan0mon
 
+aircrack-ng <Cap File>
 
 
 """
