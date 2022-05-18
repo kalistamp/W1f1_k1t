@@ -42,7 +42,7 @@ code.
 
 	''')
 print(x*2)
-print(f' Other Tools for wifi phishing besides "Wifiphisher": {tools}')
+print(f' Other Tools for wifi phishing besides "Wifiphisher" (https://github.com/wifiphisher/wifiphisher) : {tools}')
 print(x*2)
 
 # THIS TUTORIAL WILL SOLEY FOCUS ON THE "Wifiphisher" TOOL TO CONDUCT EVIL-TWIN ATTACKS (https://github.com/wifiphisher/wifiphisher)
