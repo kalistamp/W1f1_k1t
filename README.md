@@ -51,6 +51,8 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 - https://github.com/KasRoudra/PyPhisher
 
+- https://github.com/danielmiessler/SecLists
+
 - https://github.com/AlexLynd/ESP8266-Wardriving
 
 - https://pwnagotchi.ai/
