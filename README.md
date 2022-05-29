@@ -47,6 +47,8 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 - https://github.com/TheWickerMan/Auto-Airodump-NG/blob/master/Auto-Airodump-NG [Tst and Take]
 
+- https://github.com/gorvgoyl/clone-wars
+
 - https://github.com/wifiphisher/extra-phishing-pages
 
 - https://github.com/KasRoudra/PyPhisher
