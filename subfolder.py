@@ -32,6 +32,7 @@ print(x*2)
 sub_one = f'{main}/sharkcaps/'
 sub_one_a = f'{main}/sharkcaps/main'
 sub_two = f'{main}/word_li/'
+sub_two_a = f'{main}/word_li/combo'
 sub_tree = f'{main}/hashcat/'
 sub_four = f'{main}/AP/'
 sub_five = f'{main}/xtras/'
@@ -40,6 +41,7 @@ os.mkdir(main, mode=0o777)      # "0o777" is Defauly Mode to unlock all permissi
 os.mkdir(sub_one, mode=0o777)
 os.mkdir(sub_one_a, mode=0o777)
 os.mkdir(sub_two, mode=0o777)
+os.mkdir(sub_two_a, mode=0o777)
 os.mkdir(sub_tree, mode=0o777)
 os.mkdir(sub_four, mode=0o777)
 os.mkdir(sub_five, mode=0o777)
@@ -329,12 +331,70 @@ run, service NetworkManager restart – To turn back on Network wifi
 ***********************************************************************************
     """
 
+COMBO = """
+
+///////////////// Clean up combos (In Kali) : //////////////////////
+
+Show number of lines in a txt file or combo list you are working with :
+
+[ wc -l example.txt ]
+
+Unzip a file in terminal :
+
+[ tar xvzf ‘filename you are unzipping’ ] (wtf do those letters even mean?)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Join multiple “combo .txt” files into one big one too work with :
+
+(After you ‘cd’ over the the folder(or directory) that all the .txt combos are in, you enter the following command)
+
+[ cat *.txt > new.txt ] (The ‘*’ is joining all .txt files ; and the ‘> new.txt’ is naming this new file you are creating)
+
+Remove the seperators in the combo list to have them all match… (Ex. of separators… “: or ;”) 
+
+[ sed ‘s/;/:/g’ example.txt > new_example.txt ] (We are looking for ” ; ” in the list and changing them all to match ” : ” …. ” > ” saves to the name you choose for this new .txt file)
+
+Sort combo list to easily see duplicates :
+
+[ cat example.txt | sort > new_example.txt ]
+
+Remove duplicates from a combo list :
+
+( command used, sorts list and removes duplicates at the same time… )
+
+[ cat example.txt | sort | uniq > new_example.txt ]
+
+Keep just the password or email and remove the other from list :
+
+[ cat example.txt | cut -d’ : ‘ -f2 > new_example.txt ] ( after ” -d’ : ‘ “you must decide to delete before or after the semicolon …… ” -f2 ” deletes just the email leaving you with a list of passwords) – (” -f1 ” deletes all the passwords leaving you with emails)
+
+Search for specific email in a folder of txt combos using “zipgrep” :
+
+(After you ‘cd’ over the the folder(or directory) that all the .txt combos are in, you enter the following command)
+
+[ zgrep -a “example @ mail.com\`” *.txt` ] (Terminal will display which file the email is saved in)
+
+How to search for multiple emails at the same time :
+[ zgrep -e “example @ mail.com” -e “example2 @ mail.com” -e “example3 @ mail.com” *.txt ]
+
+{ You can also split one giant combo list into multiple smaller txt files, choosing however many lines per split you want }
+
+
+
+
+"""
+
 file = open(f"{main}/txt", "w") 
 file.write(f'{text_input}')
 file.close()
 
 file = open(f"{sub_one_a}/txt", "w")
 file.write(f'{main_commands}')
+file.close()
+
+file = open(f"{sub_two_a}/combo", "w")
+file.write(f'{COMBO}')
 file.close()
 
 file = open(f"{main}/toolz", "w") 
