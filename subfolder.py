@@ -9,7 +9,7 @@
 import os
 
 def sub_banner():
-    version = "1.0"
+    version = "2.2"
     ascii_banner = f"""                                                                                                                                                       
 
 ____ _  _ ___  ____ ____ _    ___  ____ ____  ___  _   _ 
@@ -34,8 +34,7 @@ sub_one_a = f'{main}/sharkcaps/main'
 sub_two = f'{main}/word_li/'
 sub_two_a = f'{main}/word_li/combo'
 sub_tree = f'{main}/hashcat/'
-sub_four = f'{main}/AP/'
-sub_five = f'{main}/xtras/'
+sub_four = f'{main}/xtras/'
 
 os.mkdir(main, mode=0o777)      # "0o777" is Defauly Mode to unlock all permissions ...
 os.mkdir(sub_one, mode=0o777)
@@ -44,12 +43,50 @@ os.mkdir(sub_two, mode=0o777)
 os.mkdir(sub_two_a, mode=0o777)
 os.mkdir(sub_tree, mode=0o777)
 os.mkdir(sub_four, mode=0o777)
-os.mkdir(sub_five, mode=0o777)
 
 # [ "os.chmod" can change the permissions of anyy Directory or File created by "os", or any other arugment you use such as "open/write" ]
 
 text_input = 'Text Input - [ PMKID = Only part of the Handshake was aquired ]'
-main_commands = """
+note = """
+
+Text Here:
+
+
+
+"""
+tools = """
+
+( Common Wireless Methods: Packet Sniffing | Jamming | Brute-Cracking | Evil Twin | Rogue Acces Point | W.r Chalking )
+
+Huge List of Resources 
+
+https://github.com/0x90/wifi-arsenal
+
+CUPP - Common User Passwords Profiler
+
+https://github.com/Mebus/cupp
+
+Remove duplicates from MASSIVE wordlist, without sorting it (for dictionary-based password cracking)
+
+https://github.com/nil0x42/duplicut
+
+Network Forensic Analysis Tool (NFAT) that processing and inspection of network traffic (mainly PCAP files, but it also capable of directly live capturing from a network interface)
+
+https://github.com/odedshimon/BruteShark
+
+Rogue Access Point framework
+
+https://github.com/wifiphisher/wifiphisher
+
+Used to audit wireless networks with many features
+
+https://github.com/v1s1t0r1sh3r3/airgeddon
+
+    """
+MEAT = """
+
+[ sudo apt install aircrack-ng ]
+
 
 # List available interfaces
 ip link show 
@@ -86,37 +123,8 @@ iwconfig wlan0mon mode managed
 # Scan available wifis ApPs
 iw dev wlan0 scan | grep "^BSS\|SSID\|WSP\|Authentication\|WPS\|WPA" 
 
-"""
-tools = """
 
-( Common Wireless Methods: Packet Sniffing | Jamming | Brute-Cracking | Evil Twin | Rogue Acces Point | W.r Chalking )
-
-Huge List of Resources 
-
-https://github.com/0x90/wifi-arsenal
-
-CUPP - Common User Passwords Profiler
-
-https://github.com/Mebus/cupp
-
-Remove duplicates from MASSIVE wordlist, without sorting it (for dictionary-based password cracking)
-
-https://github.com/nil0x42/duplicut
-
-Network Forensic Analysis Tool (NFAT) that processing and inspection of network traffic (mainly PCAP files, but it also capable of directly live capturing from a network interface)
-
-https://github.com/odedshimon/BruteShark
-
-Rogue Access Point framework
-
-https://github.com/wifiphisher/wifiphisher
-
-Used to audit wireless networks with many features
-
-https://github.com/v1s1t0r1sh3r3/airgeddon
-
-    """
-MEAT = """
+*******************************************************
 
 Tools:
 
@@ -390,7 +398,7 @@ file.write(f'{text_input}')
 file.close()
 
 file = open(f"{sub_one_a}/txt", "w")
-file.write(f'{main_commands}')
+file.write(f'{note}')
 file.close()
 
 file = open(f"{sub_two_a}/combo", "w")
