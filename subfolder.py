@@ -74,9 +74,11 @@ Network Forensic Analysis Tool (NFAT) that processing and inspection of network 
 
 https://github.com/odedshimon/BruteShark
 
-Rogue Access Point framework
+Rogue Access Point framework (Evil Twin)
 
 https://github.com/wifiphisher/wifiphisher
+
+https://github.com/KasRoudra/PyPhisher
 
 Used to audit wireless networks with many features
 
