@@ -79,6 +79,8 @@ MEAT = '''
 	*****************************************************
 
 	First step, is to INSTALL the script -
+	
+	apt-get update
 
 	apt install wifiphisher
 
