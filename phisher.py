@@ -20,7 +20,16 @@
 author = 'Автор: калистамп '
 x = ' '
 title = 'Wifi Phishing Tutorial'
-tools = ['https://github.com/gophish/gophish', 'https://github.com/s0lst1c3/eaphammer', 'https://www.bettercap.org/' 'https://github.com/Ettercap/ettercap', 'https://github.com/onevcat/Kingfisher']
+tools = '''
+
+https://github.com/gophish/gophish
+https://github.com/s0lst1c3/eaphammer
+https://www.bettercap.org/
+https://github.com/Ettercap/ettercap
+https://github.com/onevcat/Kingfisher
+
+'''
+
 # bettercap is like ettercap, but better
 
 print(title)
@@ -69,11 +78,9 @@ MEAT = '''
 
 	*****************************************************
 
-	First step, is to RUN the script -
+	First step, is to INSTALL the script -
 
-	python3 wifiphisher.py
-
-	sudo python setup.py install
+	apt install wifiphisher
 
 	On the first time running it will likely tell you that "hostapd" is not found and will prompt you to install it. Install by typing "y" for yes. It will then proceed to install hostapd (Run again after install)
 
