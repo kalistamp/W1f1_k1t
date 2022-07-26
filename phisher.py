@@ -1,10 +1,4 @@
 
-# FINISH REDAING THIS :
-
-#file:///Users/rec/Downloads/WifiPhisher,%20Hacking%20Tools%20(2022)%20(5_12_2022%208_50_51%20AM).html
-
-
-
 
 # MORE RECOURCES TO READ - - 
 
@@ -118,5 +112,5 @@ def phish():
         file = open(f"Wi_Phish.txt", "w")
         file.write(f'{MEAT}')
         file.close()
-        print(' [+] Tutorial printed in current directory ')
+        print(' [+] Tutorial printed in current directory- "Wi_Phish" ')
 phish()
