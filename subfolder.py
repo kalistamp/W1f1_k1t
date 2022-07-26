@@ -189,7 +189,7 @@ Aircrack-ng too directly crack the WEP Key
 
 Cracking can be done using aircrack-ng
 
-Note: Use a good Wordlist !
+Note: Use a good Wordlist ! [ Access Kali Wodlists, enter Terminal: ' locate wordlists ' 
 
        aircrack-ng -a2 -b 28:33:88:0A:3A:CB -w '/home/lock/28:33:68:0A:6A:CB/why_.txt' '/home/lock/beyond-01.cap'
 
@@ -337,7 +337,11 @@ Update:
 ***********************************************************************************
 After running, airmon-ng check kill to activate adapter to find AP’s
 
-run, service NetworkManager restart – To turn back on Network wifi
+run:
+
+service NetworkManager restart 
+
+– To turn back on Network wifi
 ***********************************************************************************
     """
 
