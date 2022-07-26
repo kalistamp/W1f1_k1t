@@ -17,6 +17,8 @@ ____ _  _ ___  ____ ____ _    ___  ____ ____  ___  _   _
 ___] |__| |__] |    |__| |___ |__/ |___ |  \ .|      |   
                                                          
 
+				[ Kalistamp | https://github.com/kalistamp]
+
     """
     print(ascii_banner)
 
