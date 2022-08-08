@@ -49,22 +49,28 @@ Type:
 
 Export contents of various tables in kismet DB to csv file:
 
-``` kismet_log_to_csv --in /home/kali/Kismet-20220808-06-41-29-1.kismet --out something.csv ```
+``` kkismetdb_to_wiglecsv -i /home/kali/Kismet-20220808-06-41-29-1.kismet -o new.csv ```
 
 Help Page:
 
 ```
+Kismetdb to WigleCSV
 
-usage: kismet_log_to_csv [-h] [--in INFILE] [--out OUTFILE]
-                         [--table SRCTABLE]
+A simple tool for converting the packet data from a KismetDB log file to
+the CSV format used by Wigle
 
-Kismet to CSV Log Converter
-
-optional arguments:
-  -h, --help        show this help message and exit
-  --in INFILE       Input (.kismet) file
-  --out OUTFILE     Output CSV filename
-  --table SRCTABLE  Select the table to output
+usage: kismetdb_to_wiglecsv [OPTION]
+ -i, --in [filename]          Input kismetdb file
+ -o, --out [filename]         Output Wigle CSV file
+ -f, --force                  Force writing to the target file, even if it exists.
+ -r, --rate-limit [rate]      Limit updated records to one update per [rate] seconds
+                              per device
+ -c, --cache-limit [limit]    Maximum number of device to cache, defaults to 1000.
+ -v, --verbose                Verbose output
+ -s, --skip-clean             Don't clean (sql vacuum) input database
+ -e, --exclude lat,lon,dist   Exclude records within 'dist' *meters* of the lat,lon
+                              provided.  This can be used to exclude packets close to
+                              your home, or other sensitive locations.
 
 ```
 
