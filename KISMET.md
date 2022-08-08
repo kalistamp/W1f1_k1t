@@ -49,6 +49,10 @@ Type:
 
 Export contents of various tables in kismet DB to csv file:
 
+``` kismet_log_to_csv --in /home/kali/Kismet-20220808-06-41-29-1.kismet --out something.csv ```
+
+Help Page:
+
 ```
 
 usage: kismet_log_to_csv [-h] [--in INFILE] [--out OUTFILE]
