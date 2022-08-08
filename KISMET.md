@@ -7,7 +7,7 @@ First you want to install gpsd which will be managing our gps:
 
 ``` sudo apt-get install gpsd ```
 
-``` sudo apt install gpsd-clients ```
+``` sudo apt-get install gpsd-clients ```
 
 ---------- First thing you
 
