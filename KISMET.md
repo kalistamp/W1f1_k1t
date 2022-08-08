@@ -3,6 +3,8 @@ KISMET Setup:
 
 ### Installing gpsd on Linux:
 
+First you want to install gpsd which will be managing our gps:
+
 ``` sudo apt-get install gpsd ```
 
 ``` sudo apt install gpsd-clients ```
