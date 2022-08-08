@@ -44,3 +44,31 @@ Type:
 
 * * *
 
+
+### Kismet Conversion:
+
+Export contents of various tables in kismet DB to csv file:
+
+```
+
+usage: kismet_log_to_csv [-h] [--in INFILE] [--out OUTFILE]
+                         [--table SRCTABLE]
+
+Kismet to CSV Log Converter
+
+optional arguments:
+  -h, --help        show this help message and exit
+  --in INFILE       Input (.kismet) file
+  --out OUTFILE     Output CSV filename
+  --table SRCTABLE  Select the table to output
+
+```
+
+
+
+
+
+
+
+
+
