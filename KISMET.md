@@ -22,6 +22,12 @@ This will display the GPS input stream
 
 ``` cat /dev/ttyACM0 ```
 
+### Setup wireless adadpter with airmon-ng:
+
+``` sudo airmon-ng start wlan0 ```
+
+``` sudo airmon-ng check kill ```
+
 ### Stop the systemd gpsd services:
 
 ``` systemcyl stop gpsd ```
