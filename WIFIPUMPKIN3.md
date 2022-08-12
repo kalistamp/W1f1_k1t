@@ -13,6 +13,7 @@ Now that we have installed the dependencies, we need to download the tool from G
 git clone https://github.com/P0cL4bs/wifipumpkin3.git  
 cd wifipumpkin3
 apt install python3-pyqt5
+apt install hostapd                                                    
 python3 -c "from PyQt5.QtCore import QSettings; print('done')"
 ```
 
