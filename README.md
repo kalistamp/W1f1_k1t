@@ -3,8 +3,6 @@
 
 https://pentestlab.blog/2015/02/03/hirte-attack/
 
-https://github.com/skickar/Hope_2022_Presentation/blob/main/Cyber_Weapons_Hope.pdf
-
 ## Setup Alfa aws036acm Adapter (steps):
 ```
 sudo apt update 
@@ -67,6 +65,8 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 * https://github.com/danielmiessler/SecLists/tree/master/Passwords
 
 ## Literature:
+
+* https://github.com/skickar/Hope_2022_Presentation/blob/main/Cyber_Weapons_Hope.pdf
 
 * https://miloserdov.org/?cat=2
 
