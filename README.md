@@ -38,39 +38,39 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 ## Sources:
 
+* https://github.com/P0cL4bs/wifipumpkin3
 
-- https://github.com/0x90/wifi-arsenal
+* https://github.com/0x90/wifi-arsenal
 
-- https://github.com/TheWickerMan/Auto-Airodump-NG/blob/master/Auto-Airodump-NG [Tst and Take]
+* https://github.com/TheWickerMan/Auto-Airodump-NG/blob/master/Auto-Airodump-NG [Tst and Take]
 
-- https://github.com/gorvgoyl/clone-wars
+* https://github.com/gorvgoyl/clone-wars
 
-- https://github.com/wifiphisher/extra-phishing-pages
+* https://github.com/wifiphisher/extra-phishing-pages
 
-- https://github.com/KasRoudra/PyPhisher
+* https://github.com/KasRoudra/PyPhisher
 
-- https://github.com/AlexLynd/ESP8266-Wardriving
+* https://github.com/AlexLynd/ESP8266-Wardriving
 
-- https://pwnagotchi.ai/
+* https://pwnagotchi.ai/
 
 * [Hacker_Roadmap](https://github.com/sundowndev/hacker-roadmap#globe_with_meridians-wireless-testing)
 
 * [Wigle](https://wigle.net/)
 
-- https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
-
-- https://miloserdov.org/?p=2100
-
-- https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
-
-- https://www.youtube.com/watch?v=QHo2hCzxMr0
+* https://www.youtube.com/watch?v=QHo2hCzxMr0
 
 ## Wordlists:
 
--https://github.com/ZKAW/big_wpa_wordlist
+* https://github.com/ZKAW/big_wpa_wordlist
 
--https://github.com/danielmiessler/SecLists/tree/master/Passwords
+* https://github.com/danielmiessler/SecLists/tree/master/Passwords
 
+## Literature:
+
+* https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
+
+* https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
 
 
 
