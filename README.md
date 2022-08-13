@@ -68,6 +68,8 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 ## Literature:
 
+* https://miloserdov.org/?cat=2
+
 * https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
 
 * https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
