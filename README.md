@@ -22,19 +22,6 @@ lsusb
 iwconfig
 ```
 
-## Sources:
-
-* [Hacker_Roadmap](https://github.com/sundowndev/hacker-roadmap#globe_with_meridians-wireless-testing)
-
-* [Wigle](https://wigle.net/)
-
-- https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
-
-- https://miloserdov.org/?p=2100
-- https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
-
-- https://www.youtube.com/watch?v=QHo2hCzxMr0
-
 ## T00ls:
 
 bettercap -	bettercap is the Swiss army knife for network attacks and monitoring.
@@ -49,7 +36,8 @@ Airbash - A POSIX-compliant, fully automated WPA PSK handshake capture script ai
 
 Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing.
 
-## Other Repositories: 
+## Sources:
+
 
 - https://github.com/0x90/wifi-arsenal
 
@@ -61,10 +49,28 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 - https://github.com/KasRoudra/PyPhisher
 
-- https://github.com/danielmiessler/SecLists
-
-- https://github.com/ZKAW/big_wpa_wordlist
-
 - https://github.com/AlexLynd/ESP8266-Wardriving
 
 - https://pwnagotchi.ai/
+
+* [Hacker_Roadmap](https://github.com/sundowndev/hacker-roadmap#globe_with_meridians-wireless-testing)
+
+* [Wigle](https://wigle.net/)
+
+- https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
+
+- https://miloserdov.org/?p=2100
+
+- https://blog.elcomsoft.com/2020/03/breaking-wi-fi-passwords/#:~:text=The%20WPA%20standard%20enforces%20the,network%20of%20GPU%2Daccelerated%20computers
+
+- https://www.youtube.com/watch?v=QHo2hCzxMr0
+
+## Wordlists:
+
+-https://github.com/ZKAW/big_wpa_wordlist
+
+-https://github.com/danielmiessler/SecLists/tree/master/Passwords
+
+
+
+
