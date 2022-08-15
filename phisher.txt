@@ -5,54 +5,10 @@
 #  ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
 
 
-# WHERE DO I ADD THIS ?
 
- #Evil Twin attack can be performed by running Wifiphisher w/ the following command parameters.
+THIS TUTORIAL WILL SOLEY FOCUS ON THE "Wifiphisher" TOOL TO CONDUCT EVIL-TWIN ATTACKS (https://github.com/wifiphisher/wifiphisher)
 
-#wifiphisher -aI wlan0 -jI wlan1 -p firmware-upgrade --handshake-capture handshake.pcap
-
-author = 'Автор: калистамп '
-x = ' '
-title = 'Wifi Phishing Tutorial'
-tools = '''
-
-https://github.com/gophish/gophish
-https://github.com/P0cL4bs/wifipumpkin3
-https://github.com/s0lst1c3/eaphammer
-https://www.bettercap.org/
-https://github.com/Ettercap/ettercap
-https://github.com/onevcat/Kingfisher
-
-'''
-
-# bettercap is like ettercap, but better
-
-print(title)
-print(x*2)
-print(author.title())
-print(x*2)
-
-print('''
-
-Aoccdrnig to rscheearch at an Elingsh uinervtisy, it deosn’t mttaer in waht
-oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist
-and lsat ltteer are in the rghit pclae. The rset can be a toatl mses  and
-you can sitll raed it wouthit a porbelm. Tihs is bcuseae we do not raed
-ervey lteter by it slef but the wrod as a wlohe and the biran fguiers it
-out aynawy.
-
-... so please excuse us for every typo in the documentation, man pages or 
-code.
-
-	''')
-print(x*2)
-print(f' Other Tools for wifi phishing besides "Wifiphisher" (https://github.com/wifiphisher/wifiphisher) : {tools}')
-print(x*2)
-
-# THIS TUTORIAL WILL SOLEY FOCUS ON THE "Wifiphisher" TOOL TO CONDUCT EVIL-TWIN ATTACKS (https://github.com/wifiphisher/wifiphisher)
-
-MEAT = '''
-	WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
+WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
 
 	Overview :
 
@@ -100,18 +56,3 @@ MEAT = '''
 	When the user enters their password, it will be passed to you through the Wifiphisher open terminal
 
 	The user will be passed through to the web through your system and out to the Internet, never suspecting anything awry has happened
-
-
-'''
-
-def phish():
-    choice = input(f'Would you like to [print] or [view] the Tutorial?    ')
-    print(x*2)
-    if choice == 'view':
-        print(f'{MEAT}')
-    elif choice == 'print':
-        file = open(f"Wi_Phish.txt", "w")
-        file.write(f'{MEAT}')
-        file.close()
-        print(' [+] Tutorial printed in current directory- "Wi_Phish" ')
-phish()
