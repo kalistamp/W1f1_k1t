@@ -1,14 +1,29 @@
 
+MORE RECOURCES TO READ - - (Remove or keep this?)
 
-# MORE RECOURCES TO READ - - 
-
-#  ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
-
+ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
 
 
-THIS TUTORIAL WILL SOLEY FOCUS ON THE "Wifiphisher" TOOL TO CONDUCT EVIL-TWIN ATTACKS (https://github.com/wifiphisher/wifiphisher)
+### Personal Notes:
 
-WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
+Q: Wifiphisher successfully detected 2.4G hz wifi but not 5G hz - Is 5G hz supported?
+
+A: No it does not. However, i would say that the point is moot since you still need a better frequency range than the target's and there's no better candidate than 2.4Ghz for that.
+
+Q: Why is no one clicking on my Rogue AP? - Why some victim users do not automatically connect to the rogue Access Point?
+
+A: I think you haven't understand the internals of the tool.
+There are many reasons why victims would not connect to the rogue AP: https://wifiphisher.readthedocs.io/en/latest/faq.html#why-some-victim-users-do-not-automatically-connect-to-the-rogue-access-point
+We rely on Evil Twin (cloning the target network) if the target network is of Open type or the PSK is known to us. I wouldn't recommend cloning a password-protected network and waiting for the user to manually connect (even though it may happen in extreme cases). Mount other kind of attacks, such as KARMA and Known Beacons that will make victims automatically associate with the rogue AP. Wifiphisher supports much more than the "Evil Twin".
+
+Victim’s Network Manager. Different Operating Systems support different wireless features. For example, an Android device will, by default, connect automatically to previously connected open networks making it susceptible to the Known Beacons Wi-Fi automatic association attack. At the same time iOS devices are configured to arbitrarily trasmit probe request frames for previously connected networks making them vulnerable to the KARMA attack.
+
+
+* * *
+
+### "Wifiphisher" Tutorial: (https://github.com/wifiphisher/wifiphisher)
+
+* WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
 
 	Overview :
 
@@ -48,8 +63,6 @@ WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless
 	The target user has been de-authenticated from their AP. When they re-authenticate, they will directed to the the cloned evil twin access point
 
 	When they do, the proxy on the web server will catch their request and serve up an authentic-looking message that a firmware upgrade has taken place on their router and they must re-authenticate
-
-	[ Example jpg - https...//static.wixstatic.com/media/6a4a49_693ecdd612854888b7bbe1ca87b74668~mv2.jpg/v1/fill/w_960,h_522,al_c,lg_1,q_90/6a4a49_693ecdd612854888b7bbe1ca87b74668~mv2.webp ]
 
 	If the user is fooled the will enter there credentials and hit submit
 
