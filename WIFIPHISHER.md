@@ -22,7 +22,10 @@ We rely on Evil Twin (cloning the target network) if the target network is of Op
 
 Victim’s Network Manager. Different Operating Systems support different wireless features. For example, an Android device will, by default, connect automatically to previously connected open networks making it susceptible to the Known Beacons Wi-Fi automatic association attack. At the same time iOS devices are configured to arbitrarily trasmit probe request frames for previously connected networks making them vulnerable to the KARMA attack.
 
-READ: https://census-labs.com/media/bsideslondon15-wifiphisher.pdf
+* Wifiphisher Powerpoint: https://census-labs.com/media/bsideslondon15-wifiphisher.pdf
+
+* Known-Beacon Attck: https://census-labs.com/news/2018/02/01/known-beacons-attack-34c3/
+
 
 * * *
 
