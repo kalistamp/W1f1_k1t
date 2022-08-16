@@ -3,30 +3,15 @@
 
 https://pentestlab.blog/2015/02/03/hirte-attack/
 
-## Setup Alfa aws036acm Adapter (steps):
-```
-sudo apt update 
-sudo apt upgrade -y 
-sudo apt dist-upgrade -y 
-sudo reboot now 
-sudo apt update 
-sudo apt install realtek-rtl88xxau-dkms 
-sudo apt install dkms 
-git clone https://github.com/aircrack-ng/rtl8812au 
-cd rtl8812au/ 
-make 
-sudo make install 
-lsusb 
-iwconfig
-```
+## Phish:
 
-## T00ls:
+A Comprehensive Taxonomy of Wi-Fi Attacks: https://www.ru.nl/publish/pages/769526/mark_vink.pdf
+
+
 
 bettercap -	bettercap is the Swiss army knife for network attacks and monitoring.
 
 WiFi Pumpkin -	Framework for Rogue Wi-Fi Access Point Attack.
-
-Aircrack-ng - Aircrack-ng suite of tools for monitoring and packet injection.
 
 Airgeddon - This is a multi-use bash script for Linux systems to audit wireless networks.
 
@@ -63,6 +48,23 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 * https://github.com/ZKAW/big_wpa_wordlist
 
 * https://github.com/danielmiessler/SecLists/tree/master/Passwords
+
+## Setup Alfa aws036acm Adapter (steps):
+```
+sudo apt update 
+sudo apt upgrade -y 
+sudo apt dist-upgrade -y 
+sudo reboot now 
+sudo apt update 
+sudo apt install realtek-rtl88xxau-dkms 
+sudo apt install dkms 
+git clone https://github.com/aircrack-ng/rtl8812au 
+cd rtl8812au/ 
+make 
+sudo make install 
+lsusb 
+iwconfig
+```
 
 ## Literature:
 
