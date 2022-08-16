@@ -6,6 +6,10 @@ ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
 
 ### Personal Notes:
 
+* Evil Twin attack against an open network:
+ALL clients will automatically connect to the rogue_AP
+This is a typical attack against captive portals
+
 Q: Wifiphisher successfully detected 2.4G hz wifi but not 5G hz - Is 5G hz supported?
 
 A: No it does not. However, i would say that the point is moot since you still need a better frequency range than the target's and there's no better candidate than 2.4Ghz for that.
