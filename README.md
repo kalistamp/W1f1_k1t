@@ -5,9 +5,6 @@ https://pentestlab.blog/2015/02/03/hirte-attack/
 
 ## Phish:
 
-A Comprehensive Taxonomy of Wi-Fi Attacks: https://www.ru.nl/publish/pages/769526/mark_vink.pdf
-
-
 
 bettercap -	bettercap is the Swiss army knife for network attacks and monitoring.
 
@@ -63,6 +60,8 @@ iwconfig
 ```
 
 ## Literature:
+
+* A Comprehensive Taxonomy of Wi-Fi Attacks: https://www.ru.nl/publish/pages/769526/mark_vink.pdf
 
 * https://github.com/skickar/Hope_2022_Presentation/blob/main/Cyber_Weapons_Hope.pdf
 
