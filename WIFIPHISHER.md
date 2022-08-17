@@ -1,7 +1,9 @@
 
-MORE RECOURCES TO READ - - (Remove or keep this?)
+# MORE RECOURCES TO READ - - (Remove or keep this?)
 
-ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
+* Known Beacons Powerpoint (Keywork: "wifi automatic association attack") - https://census-labs.com/media/known_beacons_34c3.pdf
+
+* ettercap tutorial - https://charlesreid1.com/wiki/MITM/Evil_Twin_with_Ettercap
 
 
 ### Personal Notes:
