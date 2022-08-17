@@ -31,7 +31,7 @@ Victim’s Network Manager. Different Operating Systems support different wirele
 
 * * *
 
-### "Wifiphisher" Tutorial: (https://github.com/wifiphisher/wifiphisher)
+### "Wifiphisher" Tutorial: (https://github.com/wifiphisher/wifiphisher) - [https://github.com/wifiphisher/extra-phishing-pages]
 
 * WifiPhisher is a popular tool to execute Evil Twin Attacks on a Targets Wireless AP (The tool is capable of using modern Wi-Fi association methods such as Known Beacons, KARMA, and Evil Twin)
 
