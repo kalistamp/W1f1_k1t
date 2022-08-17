@@ -42,6 +42,8 @@ Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red t
 
 * https://github.com/danielmiessler/SecLists/tree/master/Passwords
 
+* https://github.com/kaonashi-passwords/Kaonashi
+
 ## Setup Alfa aws036acm Adapter (steps):
 ```
 sudo apt update 
