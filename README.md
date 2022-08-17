@@ -76,5 +76,11 @@ iwconfig
 
 * https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
 
+* * *
+
+KRACK is a replay attack on the Wi-Fi Protected Access protocol that secures Wi-Fi connections. It was discovered in 2016 by the Belgian researchers Mathy Vanhoef and Frank Piessens of the University of Leuven. 
+
+* Mathy Vanhoef: https://www.mathyvanhoef.com/
+
 
 
