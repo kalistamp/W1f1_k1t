@@ -5,14 +5,7 @@ https://pentestlab.blog/2015/02/03/hirte-attack/
 
 ## Phish:
 
-
-bettercap -	bettercap is the Swiss army knife for network attacks and monitoring.
-
 WiFi Pumpkin -	Framework for Rogue Wi-Fi Access Point Attack.
-
-Airgeddon - This is a multi-use bash script for Linux systems to audit wireless networks.
-
-Airbash - A POSIX-compliant, fully automated WPA PSK handshake capture script aimed at penetration testing.
 
 Wifiphisher - Wifiphisher is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing.
 
