@@ -72,5 +72,5 @@ KRACK is a replay attack on the Wi-Fi Protected Access protocol that secures Wi-
 
 * Mathy Vanhoef: https://www.mathyvanhoef.com/
 
-
-
+* * *
+ ``` Disclaimer: This script is for educational purposes only. Please don’t use this knowledge for malicious purposes ```
