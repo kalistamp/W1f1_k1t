@@ -1,6 +1,8 @@
 
 ## check:
 
+Add to my own Repo? (CHECK !) - https://github.com/lutzenfried/Methodology/blob/main/wireless.md
+
 https://pentestlab.blog/2015/02/03/hirte-attack/
 
 https://github.com/mgeeky/Penetration-Testing-Tools/tree/master/networks/wpa2-enterprise-utils
