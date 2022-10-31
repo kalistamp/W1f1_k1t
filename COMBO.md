@@ -46,3 +46,14 @@
 ``` zgrep -e “example @ mail.com” -e “example2 @ mail.com” -e “example3 @ mail.com” *.txt ```
 
 { You can also split one giant combo list into multiple smaller txt files, choosing however many lines per split you want }
+
+
+***
+
+## Clean up Combos with Sublime:
+
+Press F5 or click Edit -> Sort Lines
+
+Click Edit -> Permute Lines -> Unique.
+
+In my experience, CSV/JSON data file has duplicates very often (especially leaked files). And it’s worth remembering to run this function before working with any table.
