@@ -8,6 +8,10 @@
 
 ``` tar xvzf ‘filename you are unzipping’ ```
 
+**Remove Lines Containing a Specific String:**
+
+```sed -e '/.fr/d' -e '/.uk/d' -e '/.ru/d' -e '/.FR/d' -e '/.UK/d' -e '/.RU/d' /home/kali/Documents/dirty_combo.txt > clean_combo.txt```
+
 ***
 
 **Join multiple “combo .txt” files into one big one too work with :**
