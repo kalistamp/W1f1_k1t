@@ -12,6 +12,10 @@
 
 ```sed -e '/.fr/d' -e '/.uk/d' -e '/.ru/d' -e '/.FR/d' -e '/.UK/d' -e '/.RU/d' /home/kali/Documents/dirty_combo.txt > clean_combo.txt```
 
+Additions:
+
+```-e '/.ne/d' -e '/.jp/d' -e '/.ocn/d' -e '/.ne/d' -e '/.ac/d' -e '/@alice/d' -e '/.it/d' -e '/.br/d'```
+
 ***
 
 **Join multiple “combo .txt” files into one big one too work with :**
