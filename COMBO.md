@@ -39,6 +39,10 @@ Additions:
 
 ``` cat example.txt | sort | uniq > new_example.txt ```
 
+**Mix combo list and save in a new file:**
+
+```shuf combo_list.txt > mixed_combo_list.txt```
+
 **Keep just the password or email and remove the other from list :**
 
 ``` cat example.txt | cut -d’ : ‘ -f2 > new_example.txt ``` ( after ” -d’ : ‘ “you must decide to delete before or after the semicolon …… ” -f2 ” deletes just the email leaving you with a list of passwords) – (” -f1 ” deletes all the passwords leaving you with emails)
