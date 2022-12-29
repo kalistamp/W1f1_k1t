@@ -29,6 +29,10 @@ Additions:
 
 ``` sed ‘s/;/:/g’ example.txt > new_example.txt ``` (We are looking for ” ; ” in the list and changing them all to match ” : ” …. ” > ” saves to the name you choose for this new .txt file)
 
+**Remove the extra spaces between lines in a text file:**
+
+```tr -s '\n' < input.txt > output.txt```
+
 **Sort combo list to easily see duplicates :**
 
 ``` cat example.txt | sort > new_example.txt ```
