@@ -70,6 +70,33 @@ Additions:
 
 Press F5 or click Edit -> Sort Lines
 
+***
+
+### 10-28-2024
+
+
+
+
+
+Correct Command:
+Bash
+sed 's/|.*[[:space:]]*$//' input.txt > output.txt
+Explanation:
+sed: Stream editor for filtering and transforming text.
+s/|.*[[:space:]]*$//:
+s: Substitute command.
+|.*: Match from the first | character to the end of the line.
+[[:space:]]*: Match zero or more trailing spaces.
+$: Ensure matching until the end of the line.
+//: Replace with nothing (delete).
+input.txt: Input file.
+> output.txt: Redirect output to a new file.
+Why this command?
+The original command (sed 's/|.*//') would leave a space at the end of each line if there were trailing spaces after the | character. By adding [[:space:]]*$ to the pattern:
+[[:space:]]* matches zero or more spaces.
+$ anchors the match to the end of the line.
+This ensures that any trailing spaces are removed, resulting in lines with no spaces at the end.
+
 Click Edit -> Permute Lines -> Unique.
 
 In my experience, CSV/JSON data file has duplicates very often (especially leaked files). And it’s worth remembering to run this function before working with any table.
